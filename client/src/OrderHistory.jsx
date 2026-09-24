@@ -9,7 +9,7 @@ function OrderHistory() {
     async function fetchOrders() {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/orders"
+          "https://restaurant-hub-lh4j.onrender.com/api/orders"
         );
 
         setOrders(response.data);

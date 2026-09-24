@@ -23,7 +23,7 @@ function App() {
     async function fetchFoods() {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/foods"
+          "https://restaurant-hub-lh4j.onrender.com/api/foods"
         );
 
         setFoods(response.data);
@@ -158,7 +158,7 @@ function App() {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://restaurant-hub-lh4j.onrender.com/api/orders",
         orderData
       );
 
